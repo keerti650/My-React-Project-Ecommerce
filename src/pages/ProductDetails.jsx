@@ -13,43 +13,48 @@ export default function ProductsDetails() {
             maxWidth: "800px",
             margin: "50px auto",
             padding: "30px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0 0 20px rgba(138, 43, 226, 0.7)", // Neon violet glow
             borderRadius: "12px",
-            backgroundColor: "#fff",
+            backgroundColor: "#1a1a2e", // Dark cyber background
             fontFamily: "'Segoe UI', sans-serif",
-            textAlign: "center"
+            textAlign: "center",
+            color: "#e0b3ff" // Light violet text
         },
         image: {
             maxWidth: "100%",
             height: "auto",
-            borderRadius: "10px",
-            marginBottom: "20px"
+            borderRadius: "12px",
+            marginBottom: "20px",
+            boxShadow: "0 0 15px #8a2be2" // Violet glow
         },
         name: {
-            fontSize: "2rem",
-            marginBottom: "10px",
-            color: "#333"
+            fontSize: "2.5rem",
+            marginBottom: "15px",
+            color: "#d580ff", // Light violet
+            textShadow: "0 0 5px #bf00ff"
         },
         description: {
-            fontSize: "1.1rem",
-            marginBottom: "15px",
-            color: "#555"
+            fontSize: "1.2rem",
+            marginBottom: "20px",
+            color: "#dcdcff"
         },
         price: {
-            fontSize: "1.3rem",
+            fontSize: "1.5rem",
             fontWeight: "bold",
-            color: "green",
-            marginBottom: "20px"
+            color: "#39ff14", // Neon green
+            textShadow: "0 0 5px #39ff14",
+            marginBottom: "25px"
         },
         button: {
-            padding: "12px 25px",
+            padding: "14px 30px",
             fontSize: "1rem",
-            backgroundColor: "#4CAF50",
+            backgroundColor: "#8a2be2", // Violet
             color: "#fff",
             border: "none",
-            borderRadius: "6px",
+            borderRadius: "8px",
             cursor: "pointer",
-            transition: "background 0.3s ease"
+            transition: "all 0.3s ease",
+            boxShadow: "0 0 10px #8a2be2, 0 0 20px #8a2be2"
         }
     };
 
@@ -64,6 +69,14 @@ export default function ProductsDetails() {
                 onClick={() => {
                     addToCart(product);
                     navigate("/cart");
+                }}
+                onMouseOver={(e) => {
+                    e.target.style.backgroundColor = "#bf00ff";
+                    e.target.style.boxShadow = "0 0 20px #bf00ff";
+                }}
+                onMouseOut={(e) => {
+                    e.target.style.backgroundColor = "#8a2be2";
+                    e.target.style.boxShadow = "0 0 10px #8a2be2, 0 0 20px #8a2be2";
                 }}
             >
                 🛒 Add to Cart

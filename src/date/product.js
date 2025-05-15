@@ -1,24 +1,26 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
+import product1 from "../assets/images/shoes.png";
+import product2 from "../assets/images/saree.png";
+import product3 from "../assets/images/headphone.png";
 import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
-
+import product6 from "../assets/images/kurti.png";
+import product5 from "../assets/images/Accessaries.png";
+import product10 from "../assets/images/Ethnicfootwear.png";
+import product7 from "../assets/images/Jacket.png";
 export const products = [
   {
     id: 1,
     name: "Velocity Sneakers",
     category: "Footwear",
-    price: 2499,
+    price: 799,
     description: "Sleek running sneakers designed for all-day comfort.",
     image: product1,
   },
   {
     id: 2,
-    name: "Urban Tee",
+    name: "saree",
     category: "Clothing",
-    price: 799,
-    description: "Minimalist cotton t-shirt with a modern streetwear vibe.",
+    price: 1999,
+    description: " Buy latast georgette designer saree online in India.",
     image: product2,
   },
   {
@@ -39,27 +41,27 @@ export const products = [
   },
   {
     id: 5,
-    name: "Shadow Cap",
-    category: "Accessories",
+    name: "Hair accessaries",
+    category: "Accessaries",
     price: 499,
     description: "Stylish black cap with adjustable fit and breathable fabric.",
     image: product5,
   },
   {
     id: 6,
-    name: "Olive Ridge Cap",
-    category: "Accessories",
+    name: "kurti",
+    category: "clothing",
     price: 499,
-    description: "Durable olive-green hat perfect for outdoor activities.",
-    image: product5,
+    description: " Utsa purple Badla printed cotton A-line kurti.",
+    image: product6,
   },
   {
     id: 7,
-    name: "Arctic Shield Jacket",
+    name: "Jacket",
     category: "Clothing",
     price: 1299,
     description: "High-quality insulated jacket for chilly days.",
-    image: product4,
+    image: product7,
   },
   {
     id: 8,
@@ -79,10 +81,10 @@ export const products = [
   },
   {
     id: 10,
-    name: "Crimson Kicks",
+    name: "Ethnic Footwear",
     category: "Footwear",
     price: 2499,
     description: "Bold red sneakers that combine style and performance.",
-    image: product1,
+    image: product10,
   },
 ];

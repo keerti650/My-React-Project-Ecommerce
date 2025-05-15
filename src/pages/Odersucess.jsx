@@ -1,7 +1,7 @@
 import { useCart } from "../context/cartContext";
 import { useEffect } from "react";
 
-export default function Ordersuccess() {
+export default function OrderSuccess() {
     const { clearCart } = useCart();
 
     useEffect(() => {
@@ -16,30 +16,35 @@ export default function Ordersuccess() {
             alignItems: "center",
             height: "100vh",
             textAlign: "center",
-            backgroundColor: "#f5f5f5",
+            backgroundColor: "#00ffff", // Aqua background for a cool, fresh look
             padding: "20px",
-            fontFamily: "'Segoe UI', sans-serif"
+            fontFamily: "'Segoe UI', sans-serif",
+            color: "#2b2b3d" // Dark text color for contrast with the bright background
         },
         title: {
-            fontSize: "2.5rem",
-            color: "#4CAF50",
-            marginBottom: "20px"
+            fontSize: "3rem",
+            color: "#ff0080", // Neon Pink
+            marginBottom: "20px",
+            textShadow: "0 0 15px #ff0080, 0 0 30px #ff00ff" // Pink glow effect
         },
         message: {
-            fontSize: "1.2rem",
-            color: "#333",
-            marginBottom: "30px"
+            fontSize: "1.5rem",
+            color: "#2b2b3d", // Dark color for message text
+            marginBottom: "30px",
+            textShadow: "0 0 10px #00ffff, 0 0 20px #ff4500" // Cyan and Neon Orange glow
         },
         button: {
-            padding: "12px 25px",
-            fontSize: "1rem",
-            backgroundColor: "#4CAF50",
+            padding: "14px 30px",
+            fontSize: "1.2rem",
+            backgroundColor: "#ff4500", // Neon Orange for button background
             color: "#fff",
             border: "none",
-            borderRadius: "6px",
+            borderRadius: "8px",
             cursor: "pointer",
-            transition: "background 0.3s ease",
-            textDecoration: "none"
+            transition: "all 0.3s ease",
+            textDecoration: "none",
+            boxShadow: "0 0 20px #ff4500, 0 0 30px #ff4500", // Neon Orange glow
+            textAlign: "center"
         }
     };
 
